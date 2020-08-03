@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-test</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img"></div>
+        <div class="text-box">
+            <div class="box">
+                <div class="topic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores?</div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam excepturi neque
+                    facilis, voluptate esse sit a fugiat, explicabo quia pariatur. Aut consequuntur voluptates esse?
+                </div>
+            </div>
+            <div class="box">
+                <div class="topic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores?</div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam excepturi neque
+                    facilis, voluptate esse sit a fugiat, explicabo quia pariatur. Aut consequuntur voluptates esse?
+                </div>
+            </div>
+            <div class="box">
+                <div class="topic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores?</div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam excepturi neque
+                    facilis, voluptate esse sit a fugiat, explicabo quia pariatur. Aut consequuntur voluptates esse?
+                </div>
+            </div>
+            <div class="box">
+                <div class="topic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores?</div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam excepturi neque
+                    facilis, voluptate esse sit a fugiat, explicabo quia pariatur. Aut consequuntur voluptates esse?
+                </div>
+            </div>
+            <div class="box">
+                <div class="topic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores?</div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam excepturi neque
+                    facilis, voluptate esse sit a fugiat, explicabo quia pariatur. Aut consequuntur voluptates esse?
+                </div>
+            </div>
+            <div class="box">
+                <div class="topic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores?</div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magnam excepturi neque
+                    facilis, voluptate esse sit a fugiat, explicabo quia pariatur. Aut consequuntur voluptates esse?
+                </div>
+            </div>
+        </div>
+        <div class="text-layout">
+            <div class="topic">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+            <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quia ducimus veniam
+                aliquam officia consectetur autem tenetur eius dignissimos? Aliquam, corporis nulla error accusantium
+                dicta animi porro sunt. Cum, doloribus.
+                Quia necessitatibus facilis incidunt dolor maxime labore eum, harum aliquam excepturi eos nobis velit
+                ratione aspernatur! Quae ab, eligendi numquam blanditiis assumenda esse voluptate, fugiat ducimus at
+                optio dolorum in.
+                Rerum aut, quasi provident debitis laboriosam nemo a quod incidunt perferendis? Deserunt obcaecati
+                praesentium, voluptate ipsa doloribus facilis officia minus, sunt accusamus sed ducimus necessitatibus
+                consectetur quidem quasi odit vel.</div>
+        </div>
+    </div>
+
+    <style>
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .text-box {
+            display: grid;
+
+            padding: 10px;
+            width: 80%;
+        }
+
+        .text-layout {
+            width: 80%;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .text-box {
+                grid-template-columns: auto;
+            }
+
+            .topic {
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+            .text {
+                font-size: 18px;
+            }
+
+            .img {
+                background-color: yellow;
+                width: 80%;
+                height: 200px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) and (min-width: 401px) {
+            .text-box {
+                grid-template-columns: repeat(2, auto);
+                grid-gap: 30px;
+            }
+
+            .topic {
+                font-weight: bold;
+                font-size: 22px;
+                color: olive;
+            }
+
+            .text {
+                font-size: 16px;
+            }
+
+            .img {
+                background-color: olive;
+                width: 80%;
+                height: 250px;
+            }
+        }
+
+        @media only screen and (min-width: 800px) {
+            .text-box {
+                grid-template-columns: repeat(3, auto);
+                grid-gap: 15px;
+            }
+
+            .topic {
+                font-weight: bold;
+                font-size: 20px;
+                color: tomato;
+            }
+
+            .text {
+                font-size: 14px;
+            }
+
+            .img {
+                background-color: tomato;
+                width: 80%;
+                height: 300px;
+            }
+        }
+    </style>
+</body>
+
+</html>
